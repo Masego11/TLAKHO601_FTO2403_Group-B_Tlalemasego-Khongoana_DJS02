@@ -7,4 +7,13 @@ form.addEventListener("submit", (event) => {
   const { dividend, divider } = Object.fromEntries(entries);
   const divisionResult = dividend / divider; // declared the divisionResult to handle the calculation
   result.innerText = Math.trunc(divisionResult); //called the Match.trunc which truncates the fractionalpart and assigned the divisionResult variable in its parameters. 
+
+  if (!dividend || !divider) {   //if statement to check if inputs are empty 
+    result.innerText = 'Division not performed. Invalid number provided. Try again.'; 
+    return;
+  }
 });
+
+
+
+     
