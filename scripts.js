@@ -13,7 +13,7 @@ form.addEventListener("submit", (event) => {
 
   try {   // the try statement throws an error if the divider is equal to zero. 
     if (divider == 0) {  
-      throw new Error('');
+      throw new Error('Error divider is equal to zero');
       
     }
     const divisionResult = dividend / divider; // declared the divisionResult to handle the calculation
